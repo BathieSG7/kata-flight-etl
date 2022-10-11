@@ -1,0 +1,73 @@
+# -*- mode: gitignore; -*-
+# vim: set filetype=gitignore:
+# ---------------------------------------------------------------------------------------
+# -- Description --
+#
+# Gitignore file to be used
+#
+# ---------------------------------------------------------------------------------------
+
+# temporary files
+*~
+*.swp
+
+# os specific files
+*.DS_Store
+*.thumbs
+
+# python virtual environment folders
+.venv
+venv/*
+
+# python precompiled files
+*.pyc
+
+# python test files
+.coverage
+.coverage.*
+.pytest_cache
+coverage.xml
+dependency-check-junit.xml
+dependency-check-report.html
+htmlcov/
+pytest-report.xml
+
+# build relative files
+build
+dist
+*egg*
+function.zip
+functions.zip
+
+# credential files and so on
+creds.json
+deploy.json
+
+# Node js
+node_modules/
+
+# log file
+*.log
+
+# ide relative files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+idea
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# other
+*/__pycache__/*
+*?metastore_db/*
+*/spark_warehouse/*
+.mypy_cache/
+loaded_data/*
+derby.log
